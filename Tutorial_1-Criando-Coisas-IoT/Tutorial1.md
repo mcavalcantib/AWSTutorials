@@ -1,0 +1,1 @@
+# Criando uma coisa IoT no AWS IoT Core
