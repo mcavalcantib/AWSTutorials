@@ -24,8 +24,3 @@ Se os passos forem seguidos corretamente, nossa coisa estará criada, porém ant
 
 8.
 
----
-<<<<<<< HEAD
-=======
-
->>>>>>> 1bd1ce2ec6989876f2b262b0f9f714c1414bc309
