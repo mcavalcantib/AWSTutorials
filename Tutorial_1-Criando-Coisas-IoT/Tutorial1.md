@@ -6,6 +6,8 @@
 2. No canto superior direito, clique em serviços e em seguidas na seção **IoT**, clique em Iot Core.
 3. Em seguida, no menu lateral do lado direito clique em Gerenciar e aparecerá uma tela parecida com a imagem abaixo. Então clique em **Registrar uma coisa**.
 
+![Passo1](https://github.com/MBezerril/AWSTutorials/blob/master/Tutorial_1-Criando-Coisas-IoT/Passo1.png)
+
 4. Em seguida clique no botão **criar uma coisa**, que irá abrir um menu de configurações para sua nova coisa.
 Por enquanto, apenas preencha o campo **nome** e o restante deixe como está e clique no botão **próximo** no canto inferior direito da tela.
 
@@ -22,5 +24,19 @@ Ao terminar de salvar os certificados, clique no botão **Activate (Ativar)** pa
 
 Se os passos forem seguidos corretamente, nossa coisa estará criada, porém antes de usar, precismos criar as poíticas de segurança para evitarmos falhas na segurança e assim evitar invasões e inserções de dados indesejados na comunicação das coisas (_things_).
 
-8.
+8. Para criamos uma política de acesso para nossa coisa basta ir ao menu na lateral esquerda e clicar em **Proteger**, em seguida em **Politicas** e então em  **Criar**.
 
+9. Na nova tela que se abrirá preencha os campos da seguinte forma:
+   - Insira um Name (Nome) para a política, como MyIotPolicy.
+   - Em Action (Ação), insira iot:*. Em Resource ARN (Recurso ARN), insira *. **ATENÇÃO:** uma política de acesso com esses parêmetros é muito permissiva e só recomendado o uso apenas para testes e somente.
+   - Em Effect (Efeito), escolha Allow (Permitir) e, depois, Create (Criar).
+Com essas configurações, a sua coisa (_thing_) terá todas as permissões para executar as ações na AWS IoT e acesso a todos os recursos.
+
+Para finalizar, clique em **Criar**.
+
+10. Vá agora no menu lateral esquerdo, clique em **Proteger** e em seguida em **Certificados**, coloque o mouse sobre o quadro do certificado que acabou de ser criado e nos três pontinhos que irão aparecer no canto direito superior do quadro, clique para abrir um menu e celecione **Anexar política** e selecione a política recém criada e então clique em **Anexar**.
+
+E pronto! Sua coisa (_thing_) já está criada e pronta para comerçar a transmitir e receber mensagens!
+
+
+   
